@@ -1,0 +1,119 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 25px 10px;
+
+    .top-header {
+        display: flex;
+        // flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid #dfe1e5;
+
+        &-left {
+            display: flex;
+            margin-left: 20px;
+            align-items: center;
+            img {
+                width: 92px;
+                height: 35px;
+                margin-top: 5px;
+                align-self: flex-start;
+            }
+            &-search {
+                margin-left: 40px;
+                display: flex;
+                flex-direction: column;
+
+                &-input {
+                    width: 720px;
+                }
+                &-options {
+                    display: flex;
+                    padding: 15px 0px 0px 0px;
+                    justify-content: space-between;
+                    font-size: 13px;
+                    align-items: center;
+                    &-left {
+                        align-items: center;
+                        margin-right: 10px;
+                        display: flex;
+                        div {
+                            display: flex;
+                            margin-right: 4px;
+                            padding: 10px;
+                            // mat-icon{
+                            //     width: 8px;
+                            //     height: 8px;
+                            // }
+                            &.active {
+                                border-bottom: 3px solid #1a73e8;
+
+                                a {
+                                    color: #1a73e8;
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                color: #5f6368;
+                            }
+                            mat-icon {
+                                font-size: 18px;
+                                width: 16px;
+                                height: 16px;
+                                margin-right: 6px;
+                                color: #5f6368;
+                            }
+                        }
+                    }
+                    &-right {
+                        align-self: flex-start;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 50px;
+                        margin-top: 10px;
+
+                        a {
+                            text-decoration: none;
+                            margin-right: 20px;
+                            color: #5f6368;
+                        }
+                    }
+                }
+            }
+        }
+        &-right {
+            display: flex;
+            align-self: flex-start;
+            margin-right: 50px;
+            margin-top: 10px;
+
+            button {
+                // margin-right: 30px;
+                margin-left: 20px;
+                outline: none;
+                padding: 8px 16px;
+                background-color: #276bdf;
+                color: white;
+                cursor: pointer;
+                border: none;
+                border-radius: 3px;
+                font-size: small;
+                &:hover {
+                    background-color: #2b7de9;
+                }
+            }
+            mat-icon {
+                color: #727272;
+                cursor: pointer;
+            }
+        }
+    }
+    .search-results{
+        max-width: 650px;
+        margin-left:150px;
+        border: 1px solid red;
+    }
+}
